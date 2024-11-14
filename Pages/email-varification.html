@@ -1,17 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Sent Success</title>
-    <link rel="stylesheet" href="../assets/css/card.css">
+    <title>Email Sent Successfully</title>
+    <style>
+        :root {
+            --primary-color: #27a776;
+            --background-color: #000;
+            --text-color: #fff;
+            --hover-color: #1e8d66;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: var(--background-color);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .success-container {
+            text-align: center;
+            background-color: #111;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            animation: slideDown 0.8s ease-out;
+            width: 90%;
+            max-width: 400px;
+            /* Maximum width for better control on larger screens */
+        }
+
+        .icon {
+            font-size: 80px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: var(--text-color);
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: var(--hover-color);
+            transform: scale(1.05);
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .success-container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div class="success-card">
-        <div class="check-icon"></div>
-        <h2>Email Sent Successfully!</h2>
-        <p>Your message has been sent. We will get back to you shortly.</p>
-        <a href="../index.html"><button>Close</button></a>
+    <div class="success-container">
+        <div class="icon">
+            <i class="fa fa-check-circle"></i>
+        </div>
+        <h1>Email Sent Successfully!</h1>
+        <p>Your message has been sent. We will get back to you soon.</p>
+        <button onclick="goBack()">Go Back</button>
     </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
