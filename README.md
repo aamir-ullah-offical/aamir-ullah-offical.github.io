@@ -21,4 +21,4 @@ The following technologies and tools were used to build this portfolio:
 - **Backend**: Node.js
 - **Tools**: GitHub Pages, VS Code, Git, OpenCV, etc.
 
-## 📂 Project Structure
+
