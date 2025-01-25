@@ -1322,6 +1322,7 @@ section,
 
 .services .service-item:hover:before {
   background: var(--accent-color);
+  background: var(--accent-color);
   inset: 0;
   border-radius: 0px;
 }
