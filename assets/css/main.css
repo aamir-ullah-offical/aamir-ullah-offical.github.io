@@ -902,6 +902,7 @@ section,
 
 .gallery .gallery-item img {
   transition: 0.3s;
+  height: 100%;
 }
 
 .gallery .gallery-links {
