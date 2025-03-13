@@ -11,7 +11,7 @@ const projects = {
     ],
     liveDemo: "https://aamir-ullah-offical.github.io/Admin-Pannel/",
     githubRepo: "https://github.com/aamir-ullah-offical/Admin-Pannel/",
-    image: "/assets/img/gallery/project-3/1.PNG",
+    image: "./assets/img/gallery/project-3/1.PNG",
   },
 
   PortfolioProject: {
@@ -27,7 +27,7 @@ const projects = {
     ],
     liveDemo: "https://aamir-ullah-offical.github.io/portfolio-book-style/",
     githubRepo: "https://github.com/aamir-ullah-offical/portfolio-book-style",
-    image: "/assets/img/gallery/portfolio.png",
+    image: "./assets/img/gallery/portfolio.png",
   },
 
   ResturenSite: {
@@ -45,7 +45,7 @@ const projects = {
       "https://aamir-ullah-offical.github.io/module5-solution/index.html",
     githubRepo: "https://github.com/aamir-ullah-offical/module5-solution",
 
-    image: "/assets/img/gallery/resturenSite.png",
+    image: "./assets/img/gallery/resturenSite.png",
   },
   ProjectDetails: {
     title: "🎨 Beautiful Image Slider Project 🎨",
@@ -60,7 +60,7 @@ const projects = {
     ],
     liveDemo: "https://aamir-ullah-offical.github.io/image-slider/",
     githubRepo: "https://aamir-ullah-offical.github.io/image-slider/",
-    image: "/assets/img/gallery/imageSlider.jpg",
+    image: "./assets/img/gallery/imageSlider.jpg",
   }
 };
 
