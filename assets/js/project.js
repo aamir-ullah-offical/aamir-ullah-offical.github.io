@@ -27,7 +27,7 @@ const projects = {
     ],
     liveDemo: "https://aamir-ullah-offical.github.io/portfolio-book-style/",
     githubRepo: "https://github.com/aamir-ullah-offical/portfolio-book-style",
-    image: "/assets/img/gallery/project-1/1.PNG",
+    image: "/assets/img/gallery/portfolio.png",
   },
 
   ResturenSite: {
@@ -60,7 +60,7 @@ const projects = {
     ],
     liveDemo: "https://aamir-ullah-offical.github.io/image-slider/",
     githubRepo: "https://aamir-ullah-offical.github.io/image-slider/",
-    image: "/assets/img/gallery/project-2/1.PNG",
+    image: "/assets/img/gallery/imageSlider.jpg",
   }
 };
 
