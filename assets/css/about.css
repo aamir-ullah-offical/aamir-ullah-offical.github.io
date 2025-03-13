@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h2 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: var(--accent-color);
+    line-height: 0;
+  }
+  

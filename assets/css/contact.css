@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-wrap {
+    margin-bottom: 30px;
+  }
+  
+  .contact .info-item i {
+    font-size: 20px;
+    color: var(--accent-color);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 40%);
+    margin-right: 15px;
+  }
+  
+  .contact .info-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    font-family: var(--default-font);
+  }
+  
+  .contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  
+  .contact .info-item:hover i {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+  }
+  
+  @media (max-width: 575px) {
+    .contact .php-email-form {
+      padding: 20px;
+    }
+  }
+  
+  .contact .email-form input[type=text],
+  .contact .email-form input[type=email],
+  .contact .email-form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: var(--surface-color);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  }
+  
+  .contact .email-form input[type=text]:focus,
+  .contact .email-form input[type=email]:focus,
+  .contact .email-form textarea:focus {
+    border-color: var(--accent-color);
+  }
+  
+  .contact .email-form input[type=text]::placeholder,
+  .contact .email-form input[type=email]::placeholder,
+  .contact .email-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
+  
+  .contact .email-form button[type=submit] {
+    color: var(--default-color);
+    background: var(--accent-color);
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 40px;
+    border: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .contact .email-form button[type=submit]:hover {
+    background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
+  }
+  
+  /* contact me button  */
+  
+  #btn-contact-me:hover {
+    background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
+    background-color: #fff;
+    color: #0c6744;
+    border-color: #27a776;
+    box-shadow: 0 12px 20px #18855b;
+    transform: translateY(-3px);
+  }

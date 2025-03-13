@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="../assets/img/logo.png" rel="icon">
-  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+  <link href="./assets/img/logo.png" rel="icon">
+  <link href="./assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -37,7 +37,12 @@
 
 
   <!-- Main CSS File -->
-  <link href="../assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/header.css" rel="stylesheet">
+  <link href="./assets/css/footer.css" rel="stylesheet">
+  <link href="./assets/css/projects.css" rel="stylesheet">
+  <link href="./assets/css/cards.css" rel="stylesheet">
+  <link href="./assets/css/popup.css" rel="stylesheet">
 
 </head>
 
@@ -46,14 +51,14 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="./index.html" class="logo d-flex align-items-center me-auto me-xl-0">
 
-        <img src="../assets/img/logo.png" alt="">>
+        <img src="./assets/img/logo.png" alt="">>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html">Home<br></a></li>
+          <li><a href="./index.html">Home<br></a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./services.html">Services</a></li>
           <li><a href="./projects.html" class="active">Projects</a></li>
@@ -107,65 +112,58 @@
     </div><!-- End Page Title -->
 
     <!-- Projects Section -->
+    <!-- Gallery Section -->
     <section id="gallery" class="gallery section">
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="../assets/img/gallery/project-1.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="../assets/img/gallery/project-1.png" title="portfolio-book-style"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="../Pages/project-pages/book-style-portfolio.html" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="../assets/img/gallery/project-2.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="../assets/img/gallery/gallery-2.jpg" title="Image Slider" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-                <a href="../Pages/project-pages/image-slider.html" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="../assets/img/gallery/project-3.PNG" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="../assets/img/gallery/project-3.PNG" title="Admin Pannel" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-                <a href="../Pages/project-pages/admin-pannel.html" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="../assets/img/gallery/projrct-4.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="../assets/img/gallery/projrct-4.png" title="Resturent Site" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-                <a href="../Pages/project-pages/resturent-site.html" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-
+        <!-- Projects Container -->
+        <div class="container-xxl py-5">
+          <div class="container">
+            <div class="row g-4" id="projects"></div>
+          </div>
         </div>
+      </div>
+      <!-- Popup Modal -->
+      <div class="modal fade" id="Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content custom-modal">
+            <!-- Close Button -->
+            <button class="custom-close" data-bs-dismiss="modal">
+              <i class="bi bi-x-lg"></i>
+            </button>
 
+            <!-- Modal Details -->
+            <div class="modal-details">
+              <!-- Full-Screen Image with Overlay -->
+              <div class="modal-header-image" id="bg">
+                <div class="overlay">
+                  <h2 id="title">Title</h2>
+                  <p id="short-description">shortDescription</p>
+                </div>
+              </div>
+
+              <!-- Content Section -->
+              <div class="padding">
+                <h5>Technologies</h5>
+                <ul id="technologies" class="list-group"></ul>
+
+                <h5>Features</h5>
+                <ul id="features" class="list-group"></ul>
+
+                <h5>GitHub Repository</h5>
+                <p id="githubRepo"></p>
+              </div>
+            </div>
+
+            <!-- Visit Button -->
+            <div class="modal-footer">
+              <a id="link" href="#" target="_blank" class="btn visit-btn">Visit</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section><!-- /Projects Section -->
 
   </main>
 
@@ -215,7 +213,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/swiper/9.4.5/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/project.js"></script>
 
 </body>
 
